@@ -1,0 +1,81 @@
+:root {
+  --font-base: "Montserrat", sans-serif;
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --dark-gray-color: #5e6064;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container{
+  width: 2100px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width:2100px) {
+  .container{
+      width: 1800px;
+  }
+}
+@media screen and (max-width:1800px) {
+  .container{
+      width: 1500px;
+  }
+}
+@media screen and (max-width:1500px) {
+  .container{
+      width: 1140px;
+  }
+}
+@media screen and (max-width:1140px) {
+  .container{
+      width: 1024px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .container{
+      width: 900px;
+  }
+}
+@media screen and (max-width:900px) {
+  .container{
+      width: 768px;
+  }
+}
+@media screen and (max-width:768px) {
+  .container{
+      width: 650px;
+  }
+}
+@media screen and (max-width:650px) {
+  .container{
+      width: 540px;
+  }
+}
+@media screen and (max-width:540px) {
+  .container{
+      width: 425px;
+  }
+}
+@media screen and (max-width:425px) {
+  .container{
+      width: 375px;
+  }
+}
+@media screen and (max-width:375px) {
+  .container{
+      width: 80%;
+  }
+}

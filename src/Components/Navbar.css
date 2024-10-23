@@ -1,0 +1,126 @@
+h1 {
+  font-size: 1.17rem;
+}
+.navbar {
+  width: 100%;
+  position: relative;
+  z-index: 500;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border: 1px solid hsla(0, 0%, 100%, 0.18);
+}
+.navbar .container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-middle {
+  display: flex;
+  gap: 40px;
+}
+.navbar-link {
+  transition: 0.3s;
+  text-decoration: none;
+  color: var(--gray-color);
+  text-transform: uppercase;
+}
+.navbar-link:hover {
+  /* text-decoration: underline; */
+  color: var(--secondary-color);
+}
+.navbar-languages {
+  display: flex;
+  gap: 20px;
+}
+.navbar-languages li {
+  color: var(--black-color);
+  cursor: pointer;
+}
+.navbar-languages .active{
+  color: var(--secondary-color);
+}
+.navbar-mobile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.navbar-mobile svg {
+  width: 70%;
+  height: 70%;
+  color: var(--white-color);
+}
+.navbar-mobile div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  padding: 1rem;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  background: url(../img/bgIMG.png);
+  background-color: var(--white-color);
+  background-size: cover;
+  background-repeat: repeat;
+  box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+}
+.navbar-mobile div svg {
+  width: 35px;
+  height: 35px;
+  color: var(--secondary-color);
+  margin: 0.5rem 1rem;
+}
+.navbar-mobile div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar-mobile li {
+  margin: 1rem;
+}
+.navbar-mobile a {
+  color: var(--gray-color);
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-mobile a:hover {
+  color: var(--secondary-color);
+}
+.navbar-mobile-wrapper{
+  height: 100%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar-middle {
+    display: none;
+  }
+}
